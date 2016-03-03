@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Задача №1</title>
+</head>
+<body>
+<script>
+	var shuffle = function(a) {
+  		for (var i = a.length - 1; i > 0; i--) {
+
+    		var num = Math.floor(Math.random() * i); //случайное число от первого до текущего индекса
+    		var d = a[num];							//перестановка случайно выбранного элемента с текущим
+    		a[num] = a[i];
+    		a[i] = d;
+
+  		}
+
+  	return a;
+	}
+
+var array = [1,2,3,4,5,6,7,8,9,0];
+var shuffledArray = shuffle(array);
+console.log(shuffledArray)
+</script>
+</body>
+</html>

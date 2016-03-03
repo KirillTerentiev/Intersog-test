@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Задача #2</title>
+</head>
+<body>
+
+<script type="text/javascript">
+function ballsOut(){
+
+ function randomInteger(min, max) {
+
+    var rand = min - 0.5 + Math.random() * (max - min + 1)
+
+    rand = Math.round(rand);
+    
+    return rand
+  }
+
+  var randomPercent = randomInteger( 0, 100 );
+
+  if (randomPercent >= 0 && randomPercent < (1000 / 1110 * 100)){
+
+  	console.log("black")
+
+  }else if(randomPercent >= 90 && randomPercent < (100 / 1110 * 100)){
+
+  	console.log("red")
+
+  }else{
+
+  	console.log('white')
+  }
+
+}
+console.log(ballsOut());
+
+
+
+
+</script>
+</body>
+</html>
